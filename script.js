@@ -1832,28 +1832,6 @@ function initializeCaseModal() {
     card.addEventListener('click', () => {
       const id = card.id.replace('Preview', '');
       openModal(id);
-    });
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        const id = card.id.replace('Preview', '');
-        openModal(id);
-      }
-    });
-  });
-
-  closeBtn.addEventListener('click', closeModal);
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeModal();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && overlay.classList.contains('is-active')) {
-      closeModal();
-    }
-  });
-}
-
 const strategicSystemsData = {
   sysInsta: {
     title: 'Instagram Operating System',
@@ -2174,7 +2152,8 @@ function initializeSystemModal() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderExpertise();
+  initializeReveal();
+  // renderExpertise(); (Disabled for new Bento Grid)
   renderTimeline();
   renderWritingSamples();
   renderWorkItems();
@@ -2184,9 +2163,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeMobileMenu();
   initializeSmoothScroll();
   initializeActiveNavLink();
-  initializeReveal();
-  initializeCaseModal();
-  initializeSystemModal();
   initializeWritingModal();
   initializeProductionFilters();
   initializeProductionModal();
