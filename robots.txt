@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /assets/proofs/
 
 Sitemap: https://iamshwetaranjan.in/sitemap.xml
+
+# Block no pages — full crawl allowed
+Disallow:
