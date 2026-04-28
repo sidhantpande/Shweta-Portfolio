@@ -378,99 +378,109 @@ const portfolioWorkData = {
   ],
   timeline: [
     {
-      id: 'timeline-5',
+      id: 'timeline-1',
       order: 1,
       role: 'Content Writer',
-      company: 'Numen Edu and Techmiles',
-      period: '2021 - 2022',
-      track: 'Early client portfolio track [Simultaneous Track]',
-      impact: 'Built domain writing depth across education and technology categories',
+      company: 'Numen Edu Services & Techmiles',
+      period: '2021 – 2022',
+      track: 'Early Client Portfolio · Simultaneous Track',
+      impact: 'Built domain writing depth across education and technology categories — establishing the research, structure, and voice discipline that underpins every content role since.',
       badge: 'Assignments',
     },
     {
-      id: 'timeline-4',
+      id: 'timeline-2',
       order: 2,
       role: 'Senior Content Writer',
       company: 'Rail Recipe',
-      period: 'Aug 2021 - Jan 2022',
-      track: 'Foundation track [Simultaneous Track]',
-      impact: 'Supported lead growth and traffic improvements through content campaigns',
-      badge: 'Early stage',
+      period: 'Aug 2021 – Jan 2022',
+      track: 'Foundation Track · Simultaneous Track',
+      impact: "Supported lead growth and traffic improvements through content campaigns — first experience owning a brand's complete content output end-to-end.",
+      badge: 'Early Stage',
     },
     {
       id: 'timeline-3',
       order: 3,
       role: 'Freelance Content Writer',
       company: 'Teachmint',
-      period: 'Jun 2021 - Dec 2022',
-      track: 'Parallel freelance track [Simultaneous Track]',
-      impact: 'Delivered SEO-led educational writing with intent-focused structure',
+      period: 'Jun 2021 – Dec 2022',
+      track: 'Parallel Freelance Track · Simultaneous Track',
+      impact: 'Delivered SEO-led educational writing with intent-focused structure across an 18-month engagement — building the long-form content foundation.',
       badge: 'Freelance',
     },
     {
-      id: 'timeline-2',
+      id: 'timeline-4',
       order: 4,
       role: 'Marketing Copywriter',
-      company: 'Adda247 and CareerPower',
-      period: 'Apr 2022 - Mar 2025',
-      track: 'Performance communication track',
-      impact: 'Scaled CTR and campaign revenue outcomes across major exam verticals',
+      company: 'Adda247 & CareerPower',
+      period: 'Apr 2022 – Mar 2025',
+      track: 'Performance Communication Track',
+      impact: 'Scaled push notification CTR from 0.7% to a 7% peak and contributed to peak revenue campaigns across SSC, Railways, Banking, and UPSC verticals — over three years of sustained performance delivery.',
       badge: 'Corporate',
     },
     {
-      id: 'timeline-1',
+      id: 'timeline-5',
       order: 5,
       role: 'Social Media Senior Associate',
       company: 'Vedam School of Technology',
-      period: 'Apr 2025 - Present',
-      track: 'Leadership track',
-      impact: 'Built end-to-end social and ORM systems from zero baseline',
-      badge: 'Core role',
+      period: 'Apr 2025 – Feb 2026',
+      track: 'Leadership Track',
+      impact: 'Built end-to-end social media, content, and ORM systems from a zero baseline — growing Instagram 26×, generating 1.1M+ reach, and delivering 281 attributed leads across 5 campaign cycles.',
+      badge: 'Core Role',
+    },
+    {
+      id: 'timeline-6',
+      order: 6,
+      role: 'Associate Manager',
+      company: 'Blue Dot Transform Consulting',
+      period: 'Mar 2026 – Present',
+      track: 'Brand Management Track',
+      impact: "Managing complete social media, content strategy, graphic design, script writing, and video direction for Coach Avinash Anand Singh — one of India's leading transformational coaches.",
+      badge: 'Current Role',
     },
   ],
   writingPortfolio: [
     {
       id: 'writing-railrecipe',
       company: 'Rail Recipe',
-      companyUrl: 'https://www.railrecipe.com/',
+      companyUrl: 'writing-rail-recipe.html',
       companyInitial: 'RR',
       type: 'Website Copy + Blog',
       domain: 'Travel · Railway Services',
-      scope: 'Complete website copy and blog content for India\'s railway food delivery platform. Delivered homepage, service page, and category copy alongside regular SEO blog articles.',
-      keyAreas: ['Homepage copy', 'Service page content', 'SEO blog articles', 'Category descriptions', 'CTA frameworks'],
+      scope: "Complete website copy and blog content for India's railway food delivery platform. Delivered homepage, service page, and category copy alongside regular SEO blog articles — contributing to a 30% improvement in website traffic and 25% increase in lead generation.",
+      keyAreas: ['Homepage Copy', 'Service Page Content', 'SEO Blog Articles', 'Category Descriptions', 'CTA Frameworks'],
       period: 'Aug 2021 – Jan 2022',
     },
     {
       id: 'writing-teachmint',
       company: 'Teachmint',
-      companyUrl: 'https://blog.teachmint.com/',
+      companyUrl: 'writing-teachmint.html',
       companyInitial: 'TM',
       type: 'Blog Writing',
       domain: 'EdTech · Online Learning',
-      scope: 'Long-form SEO blog articles for one of India\'s leading EdTech platforms. Topics spanned teaching methodology, online classroom strategy, and education-sector trend analysis.',
-      keyAreas: ['EdTech long-form blogs', 'Teaching strategy guides', 'Exam preparation content', 'SEO keyword targeting', 'Editorial structure'],
+      scope: "Long-form SEO blog articles for one of India's leading EdTech platforms. Topics spanned teaching methodology, online classroom strategy, and education-sector trend analysis — all structured for high search intent and plagiarism-free delivery.",
+      keyAreas: ['EdTech Long-form Blogs', 'Teaching Strategy Guides', 'Exam Preparation Content', 'SEO Keyword Targeting', 'Editorial Structure'],
       period: 'Jun 2021 – Dec 2022',
     },
     {
       id: 'writing-numen',
       company: 'Numen Edu Services',
-      companyUrl: 'https://numeneduservices.com/',
+      companyUrl: 'writing-numen.html',
       companyInitial: 'NE',
       type: 'Website Copy',
       domain: 'Education Services',
-      scope: 'Brand and website copy for an education services company including programme page content, about section narratives, and key landing page messaging.',
-      keyAreas: ['Brand voice copy', 'Programme page content', 'About and leadership pages', 'Service descriptions', 'Landing page messaging'],
+      scope: "Brand and website copy for an education services company — including programme page content, about section narratives, and key landing page messaging. Built to drive lead capture and communicate institutional credibility.",
+      keyAreas: ['Brand Voice Copy', 'Programme Page Content', 'About & Leadership Pages', 'Service Descriptions', 'Landing Page Messaging'],
       period: '2021 – 2022',
     },
     {
       id: 'writing-techmiles',
       company: 'Techmiles',
-      companyUrl: 'https://techmiles.co/',
+      companyUrl: 'writing-techmiles.html',
       companyInitial: 'TC',
       type: 'Technology Content',
       domain: 'Technology · Career Development',
-      scope: 'Technology and career development content for a digital skills platform. Covered skill-building articles, industry overviews, and career transition guides for tech-sector audiences.',
-      keyAreas: ['Technology articles', 'Skill development content', 'Career guide writing', 'Platform copy', 'Industry overviews'],
+      scope: "Technology and career development content for a digital skills platform — covering skill-building articles, industry overviews, and career transition guides for tech-sector audiences seeking direction in a fast-moving market.",
+      keyAreas: ['Technology Articles', 'Skill Development Content', 'Career Guide Writing', 'Platform Copy', 'Industry Overviews'],
       period: '2021 – 2022',
     },
   ],
@@ -831,14 +841,13 @@ function createExpertiseCard(item) {
 
 function createTimelineItem(item, index) {
   const wrapper = document.createElement('article');
-  const isEven = index % 2 === 1;
-  wrapper.className = `timeline-item reveal${isEven ? ' timeline-item-even' : ' timeline-item-odd'}`;
-  wrapper.style.transitionDelay = `${Math.min(index * 0.08, 0.4)}s`;
-  wrapper.dataset.order = item.order || index;
+  // Latest at the top, so we hide everything after index 1 (the first 2 items)
+  wrapper.className = `timeline-item reveal${index > 1 ? ' is-hidden' : ''}`;
+  wrapper.style.transitionDelay = `${Math.min(index * 0.1, 0.4)}s`;
+  if (index > 1) wrapper.style.display = 'none';
 
   const node = document.createElement('span');
   node.className = 'timeline-node';
-  node.appendChild(createIcon('timeline', 'icon'));
 
   const card = document.createElement('div');
   card.className = 'timeline-card';
@@ -870,95 +879,119 @@ function createTimelineItem(item, index) {
   track.className = 'timeline-track';
   track.textContent = item.track;
 
-  const impact = document.createElement('span');
+  const impact = document.createElement('p');
   impact.className = 'timeline-impact';
   impact.textContent = item.impact;
 
-  card.append(periodRow, role, company, track, impact);
-  wrapper.append(node, card);
+  card.appendChild(periodRow);
+  card.appendChild(role);
+  card.appendChild(company);
+  card.appendChild(track);
+  card.appendChild(impact);
+
+  wrapper.appendChild(node);
+  wrapper.appendChild(card);
   return wrapper;
 }
 
-function createWritingClientCard(item) {
-  const card = document.createElement('article');
-  card.className = 'writing-client-card reveal';
-  card.setAttribute('role', 'button');
-  card.setAttribute('tabindex', '0');
-  card.setAttribute('aria-label', `View details for ${item.company}`);
-
-  const head = document.createElement('div');
-  head.className = 'writing-client-head';
-
-  const badge = document.createElement('span');
-  badge.className = 'writing-client-badge';
-  badge.textContent = item.companyInitial;
-
-  const headText = document.createElement('div');
-  headText.className = 'writing-client-head-text';
-
-  const companyName = document.createElement('span');
-  companyName.className = 'writing-client-name';
-  companyName.textContent = item.company;
-
-  const period = document.createElement('span');
-  period.className = 'writing-client-period';
-  period.textContent = item.period;
-
-  headText.append(companyName, period);
-  head.append(badge, headText);
-
-  const typeRow = document.createElement('div');
-  typeRow.className = 'writing-type-row';
-
-  const typeTag = document.createElement('span');
-  typeTag.className = 'writing-type-tag';
-  typeTag.textContent = item.type;
-
-  const domainTag = document.createElement('span');
-  domainTag.className = 'writing-domain-tag';
-  domainTag.textContent = item.domain;
-
-  typeRow.append(typeTag, domainTag);
-
-  const scope = document.createElement('p');
-  scope.className = 'writing-client-scope';
-  scope.textContent = item.scope;
-
-  const areasLabel = document.createElement('p');
-  areasLabel.className = 'writing-areas-label';
-  areasLabel.textContent = 'Key areas';
-
-  const areas = document.createElement('div');
-  areas.className = 'writing-areas';
-  item.keyAreas.forEach((area) => {
-    const chip = document.createElement('span');
-    chip.className = 'writing-area-chip';
-    chip.textContent = area;
-    areas.appendChild(chip);
-  });
-
-  const cta = document.createElement('span');
-  cta.className = 'writing-client-cta';
-  cta.textContent = 'View Project Details';
-
-  card.append(head, typeRow, scope, areasLabel, areas, cta);
-
-  card.addEventListener('click', () => {
-    if (window.openWritingModal) {
-      window.openWritingModal(item.id);
-    }
-  });
-
-  card.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      if (window.openWritingModal) {
-        window.openWritingModal(item.id);
-      }
-    }
-  });
-
+function createCarouselCard(item) {
+  const card = document.createElement('div');
+  card.className = 'writing-carousel-card';
+  
+  const keyAreasHtml = item.keyAreas.map(area => `<span class="writing-area-chip">${area}</span>`).join('');
+  
+  card.innerHTML = `
+    <div class="case-preview-top">
+      <span class="case-preview-badge">${item.period}</span>
+    </div>
+    <h3 class="writing-card-company">${item.company}</h3>
+    <div class="writing-card-tags">
+      <span class="writing-tag">${item.type}</span>
+      <span class="writing-tag">${item.domain}</span>
+    </div>
+    <p class="writing-card-summary">${item.scope}</p>
+    <div class="writing-card-areas">
+      ${keyAreasHtml}
+    </div>
+    <a href="${item.companyUrl}" class="case-card-link">
+      Read Project →
+    </a>
+  `;
+  
   return card;
+}
+
+function initializeWritingCarousel() {
+  const track = document.getElementById('writingCarouselTrack');
+  const indicators = document.getElementById('writingCarouselIndicators');
+  const prevBtn = document.getElementById('writingPrevBtn');
+  const nextBtn = document.getElementById('writingNextBtn');
+  
+  if (!track || !indicators || !prevBtn || !nextBtn) return;
+  
+  const items = portfolioWorkData.writingPortfolio;
+  let currentIndex = 0;
+  
+  // Render Cards
+  track.innerHTML = '';
+  items.forEach(item => {
+    track.appendChild(createCarouselCard(item));
+  });
+  
+  // Render Indicators
+  indicators.innerHTML = '';
+  items.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.className = `indicator-dot${index === 0 ? ' active' : ''}`;
+    dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+    dot.addEventListener('click', () => goToSlide(index));
+    indicators.appendChild(dot);
+  });
+  
+  const updateCarousel = () => {
+    const cards = track.querySelectorAll('.writing-carousel-card');
+    const gap = 24; // Matching CSS gap
+    const cardWidth = track.parentElement.offsetWidth;
+    
+    track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+    
+    // Update Active Class
+    cards.forEach((card, index) => {
+      card.classList.toggle('active', index === currentIndex);
+    });
+    
+    // Update Indicators
+    const dots = indicators.querySelectorAll('.indicator-dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentIndex);
+    });
+    
+    // Update Buttons
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === items.length - 1;
+  };
+  
+  const goToSlide = (index) => {
+    currentIndex = index;
+    updateCarousel();
+  };
+  
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < items.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+  
+  // Initial state
+  updateCarousel();
 }
 
 const writingPortfolioModals = {
@@ -1121,41 +1154,7 @@ function initializeWritingModal() {
   };
 }
 
-function renderWorkItems(filter = 'all') {
-  const container = document.getElementById('productionGrid');
-  if (!container) return;
 
-  container.innerHTML = '';
-
-  const allItems = [
-    ...portfolioWorkData.youtubeShorts,
-    ...portfolioWorkData.instagramReels
-  ];
-
-  const filteredItems = filter === 'all'
-    ? allItems
-    : allItems.filter(item => item.platform === filter);
-
-  filteredItems.forEach((item) => {
-    container.appendChild(createWorkCard(item));
-  });
-
-  // Re-trigger reveal animations if necessary
-  if (window.initializeReveal) {
-    window.initializeReveal();
-  }
-}
-
-function initializeProductionFilters() {
-  const buttons = document.querySelectorAll('.filter-btn');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      renderWorkItems(btn.dataset.filter);
-    });
-  });
-}
 
 function initializeProductionModal() {
   const overlay = document.getElementById('caseModalOverlay');
@@ -1245,22 +1244,57 @@ function renderExpertise() {
 
 function renderTimeline() {
   const timeline = document.getElementById('jobPathwayTimeline');
-  if (!timeline) return;
+  const seeMoreBtn = document.getElementById('seeMoreTimeline');
+  if (!timeline || !seeMoreBtn) return;
 
   timeline.innerHTML = '';
-  portfolioWorkData.timeline.forEach((item, index) => {
+  // Clone and reverse to show latest at top
+  const sortedItems = [...portfolioWorkData.timeline].reverse();
+  
+  sortedItems.forEach((item, index) => {
     timeline.appendChild(createTimelineItem(item, index));
+  });
+
+  seeMoreBtn.addEventListener('click', () => {
+    const hiddenItems = timeline.querySelectorAll('.timeline-item.is-hidden');
+    const isShowingMore = seeMoreBtn.classList.toggle('is-active');
+    timeline.classList.toggle('is-expanded', isShowingMore);
+    
+    if (isShowingMore) {
+      hiddenItems.forEach((item, i) => {
+        item.style.display = 'block';
+        // Staggered reveal
+        setTimeout(() => {
+          item.classList.remove('is-hidden');
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 100 + (i * 100));
+      });
+      seeMoreBtn.querySelector('.btn-text').textContent = 'Collapse History';
+    } else {
+      const allItems = timeline.querySelectorAll('.timeline-item');
+      // Scroll smoothly back to the top of the timeline before collapsing
+      const timelineTop = timeline.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: timelineTop, behavior: 'smooth' });
+      
+      setTimeout(() => {
+        allItems.forEach((item, index) => {
+          if (index > 1) {
+            item.classList.add('is-hidden');
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => item.style.display = 'none', 500);
+          }
+        });
+        seeMoreBtn.querySelector('.btn-text').textContent = 'Show Full History';
+      }, 300);
+    }
   });
 }
 
 function renderWritingSamples() {
-  const grid = document.getElementById('writingClientGrid');
-  if (!grid) return;
-
-  grid.innerHTML = '';
-  portfolioWorkData.writingPortfolio.forEach((item) => {
-    grid.appendChild(createWritingClientCard(item));
-  });
+  // renderWritingSamples is replaced by initializeWritingCarousel for the single-card carousel redesign.
+  initializeWritingCarousel();
 }
 
 function initializeStickyNav() {
@@ -1832,6 +1866,28 @@ function initializeCaseModal() {
     card.addEventListener('click', () => {
       const id = card.id.replace('Preview', '');
       openModal(id);
+    });
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const id = card.id.replace('Preview', '');
+        openModal(id);
+      }
+    });
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+}
+
 const strategicSystemsData = {
   sysInsta: {
     title: 'Instagram Operating System',
@@ -2156,7 +2212,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // renderExpertise(); (Disabled for new Bento Grid)
   renderTimeline();
   renderWritingSamples();
-  renderWorkItems();
   renderChannelPresence();
 
   initializeStickyNav();
@@ -2164,6 +2219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeSmoothScroll();
   initializeActiveNavLink();
   initializeWritingModal();
-  initializeProductionFilters();
   initializeProductionModal();
+  initializeCaseModal();
+  initializeSystemModal();
 });
