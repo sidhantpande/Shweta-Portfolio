@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://iamshwetaranjan.in/case-study-divineheals.html" />
+  <title>DivineHeals Case Study | Full-Stack Instagram Management — Shweta Ranjan</title>
+  <meta name="description" content="Discover how Shweta Ranjan managed the complete Instagram presence for DivineHeals, owning the entire content lifecycle from strategy and scripting to shoot direction and publishing.">
+  <meta name="author" content="Shweta Ranjan">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DivineHeals Case Study | Full-Stack Instagram Management">
+  <meta property="og:description" content="End-to-end Instagram growth and content systems for DivineHeals. Narrative scripting, visual direction, and community management.">
+  <meta property="og:url" content="https://iamshwetaranjan.in/case-study-divineheals.html">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "DivineHeals Instagram Case Study | Complete Content Lifecycle Management",
+        "description": "Full-stack Instagram ownership for DivineHeals, a spiritual and wellness brand. Shweta Ranjan managed everything from content strategy and shoot direction to scriptwriting and publishing.",
+        "author": {
+          "@type": "Person",
+          "name": "Shweta Ranjan",
+          "url": "https://iamshwetaranjan.in/"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Shweta Ranjan"
+        },
+        "about": {
+          "@type": "Organization",
+          "name": "DivineHeals",
+          "description": "Spiritual and wellness brand focusing on energy transformation and healing."
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://iamshwetaranjan.in/"},
+          {"@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://iamshwetaranjan.in/#case-studies"},
+          {"@type": "ListItem", "position": 3, "name": "DivineHeals", "item": "https://iamshwetaranjan.in/case-study-divineheals.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── Page-level layout overrides ── */
+    .dh-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .dh-offering-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      position: relative;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .dh-offering-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-soft);
+      box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.08);
+    }
+
+    .dh-offering-card .card-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .dh-offering-card h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--accent-strong);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .dh-offering-card p {
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Responsibilities grid: 3 columns ── */
+    .dh-resp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .dh-resp-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dh-resp-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+
+    .dh-resp-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-soft);
+      box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.08);
+    }
+
+    .dh-resp-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .dh-resp-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+    }
+
+    .dh-resp-card h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent-strong);
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    .dh-resp-card p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    /* ── Content lifecycle: numbered steps ── */
+    .dh-lifecycle {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .dh-lifecycle-step {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 28px 28px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .dh-lifecycle-step:hover {
+      background: var(--surface);
+      border-color: var(--accent-soft);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -10px rgba(15, 23, 42, 0.08);
+    }
+
+    .dh-lifecycle-step .step-index {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--accent);
+      opacity: 0.25;
+      line-height: 1;
+    }
+
+    .dh-lifecycle-step h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--accent-strong);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0;
+    }
+
+    .dh-lifecycle-step p {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ── Philosophy: horizontal numbered rows ── */
+    .dh-principles {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-top: 40px;
+    }
+
+    .dh-principle {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 0;
+      align-items: stretch;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background: var(--surface);
+    }
+
+    .dh-principle + .dh-principle {
+      margin-top: 12px;
+    }
+
+    .dh-principle:hover {
+      border-color: var(--accent-soft);
+      box-shadow: 0 12px 28px -8px rgba(15, 23, 42, 0.08);
+    }
+
+    .dh-principle-num {
+      background: var(--accent-faded);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--accent-strong);
+      border-right: 1px solid var(--border);
+      min-height: 100%;
+    }
+
+    .dh-principle-body {
+      padding: 24px 32px;
+    }
+
+    .dh-principle-body h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--accent-strong);
+      margin-bottom: 8px;
+    }
+
+    .dh-principle-body p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .dh-resp-grid { grid-template-columns: repeat(2, 1fr); }
+      .dh-lifecycle  { grid-template-columns: repeat(2, 1fr); }
+      .dh-intro-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .dh-resp-grid  { grid-template-columns: 1fr; }
+      .dh-lifecycle  { grid-template-columns: 1fr; }
+      .dh-principle  { grid-template-columns: 60px 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" width="0" height="0">
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="4.5" y="4.5" width="15" height="15" rx="4.5" ry="4.5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+      <circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8" fill="none"/>
+      <circle cx="16.8" cy="7.2" r="1" fill="currentColor" stroke="none"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="nav scrolled" id="nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <img src="favicon.png" alt="SR Logo" class="nav-logo">
+          Shweta Ranjan
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#expertise">Expertise</a></li>
+          <li><a href="index.html#case-studies">Case Studies</a></li>
+          <li><a href="index.html#featured-work">Featured Work</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <svg class="icon" style="transform: rotate(180deg)"><use href="#icon-arrow-right"></use></svg>
+        Back to Portfolio
+      </a>
+    </div>
+
+    <!-- ── Hero ── -->
+    <section class="cs-hero">
+      <div class="container">
+        <span class="cs-role-badge reveal">Complete Instagram Management &middot; Active Mandate</span>
+        <h1 class="cs-title reveal reveal-delay-1">DivineHeals</h1>
+        <p class="cs-subtitle reveal reveal-delay-2">
+          Full-stack Instagram ownership for a spiritual and wellness brand &mdash; strategy, shoots, scripts, design, and publishing in one hand.
+        </p>
+        <div class="cs-hero-stats reveal reveal-delay-3">
+          <div class="cs-hero-stat">
+            <span class="cs-stat-val">1</span>
+            <span class="cs-stat-lbl">Core Platform</span>
+          </div>
+          <div class="cs-hero-stat">
+            <span class="cs-stat-val">6</span>
+            <span class="cs-stat-lbl">Functions Owned</span>
+          </div>
+          <div class="cs-hero-stat">
+            <span class="cs-stat-val">Full</span>
+            <span class="cs-stat-lbl">Stack Ownership</span>
+          </div>
+          <div class="cs-hero-stat">
+            <span class="cs-stat-val">Active</span>
+            <span class="cs-stat-lbl">Current Mandate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 1: About the Brand ── -->
+    <section class="cs-section" id="about">
+      <div class="container">
+        <h2 class="reveal">The Brand — Spiritual Wellness Narrative</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>DivineHeals is a <span class="cs-highlight">spiritual and wellness brand</span> focused on energy transformation, inner healing, and personal destiny alignment. It operates at the intersection of ancient spiritual practice and modern wellness &mdash; offering services that help people reconnect with themselves and realign their energy at a soul level.</p>
+          <p>The brand serves an audience actively searching for meaning, healing, and direction. That is not a casual audience. It is an audience that places high trust in the voices it follows, and extends that trust slowly and deliberately. Everything the brand communicates on Instagram has to earn that trust &mdash; post by post.</p>
+        </div>
+
+        <div class="dh-intro-grid reveal reveal-delay-2">
+          <div class="dh-offering-card">
+            <span class="card-num">Service 01</span>
+            <h4>Crystals, Gemstones &amp; Rudraksha</h4>
+            <p>Curated spiritual tools for energy alignment &mdash; sourced with intention and offered with guidance on usage, placement, and individual purpose for each seeker's journey.</p>
+          </div>
+          <div class="dh-offering-card">
+            <span class="card-num">Service 02</span>
+            <h4>Angel Classes &amp; Readings</h4>
+            <p>Structured programs and one-on-one sessions connecting clients with angelic guidance &mdash; designed to provide clarity, direction, and spiritual support at key life moments.</p>
+          </div>
+          <div class="dh-offering-card">
+            <span class="card-num">Service 03</span>
+            <h4>Energy Healing Sessions</h4>
+            <p>Hands-on and remote healing sessions targeting energy blocks, emotional trauma, and spiritual misalignment &mdash; helping clients transform their destiny through conscious energy work.</p>
+          </div>
+          <div class="dh-offering-card">
+            <span class="card-num">Service 04</span>
+            <h4>Soul Discovery Guidance</h4>
+            <p>Deep-dive sessions to help individuals discover what their soul truly needs &mdash; combining spiritual intuition with practical life tools to create lasting inner transformation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 2: The Mandate ── -->
+    <section class="cs-section" id="mandate">
+      <div class="container">
+        <h2 class="reveal">The Mandate — Full-Stack Instagram Ownership</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>I was brought in to manage the <span class="cs-highlight">complete Instagram presence</span> for DivineHeals &mdash; not as a single-task contributor, but as a full-stack Instagram manager owning every layer of the content lifecycle from initial strategy to final publication.</p>
+          <p>This is a high-trust, high-responsibility mandate. A spiritual wellness brand lives or dies by the authenticity of its voice and the consistency of its visual identity. Every post, reel, and story must feel intentional &mdash; because the audience engaging with DivineHeals is often in a searching, vulnerable state. <span class="cs-highlight">The content must earn that trust.</span></p>
+          <p>That means I am not executing isolated deliverables. I am running a coherent, integrated content engine where strategy, visuals, scripts, and execution all flow from the same unified vision for the brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 3: What Shweta Manages ── -->
+    <section class="cs-section" id="responsibilities">
+      <div class="container">
+        <h2 class="reveal">Operational Execution — What I Own</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>Six distinct functions. One consistent voice. All owned by me.</p>
+        </div>
+
+        <div class="dh-resp-grid reveal reveal-delay-2">
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">01 &mdash; Strategy</span>
+            <h4>Content Strategy &amp; Planning</h4>
+            <p>End-to-end Instagram content strategy &mdash; content bucket architecture, posting cadence, platform-specific format planning, and campaign alignment with brand offerings. Every month is structured around a deliberate content calendar that balances education, product showcases, testimonials, and spiritual storytelling.</p>
+          </div>
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">02 &mdash; Pre-Production</span>
+            <h4>Planning &amp; Directing Shoots</h4>
+            <p>Pre-production planning for all visual content &mdash; shot lists, mood boards, prop guidance, location decisions, and on-set creative direction. I brief and direct shoots so that every visual captured is aligned with the brand aesthetic: ethereal, grounded, and premium. Nothing goes to camera without a deliberate plan.</p>
+          </div>
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">03 &mdash; Production</span>
+            <h4>Executing Shoots</h4>
+            <p>Hands-on execution of content shoots &mdash; managing the shoot environment, directing talent, guiding lighting and framing decisions, and ensuring the footage captured matches the planned creative vision. I am on the ground, not planning from a distance.</p>
+          </div>
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">04 &mdash; Scripting</span>
+            <h4>Scriptwriting for Content</h4>
+            <p>Writing all scripts for Instagram Reels and video content &mdash; crafted in the brand's unique spiritual tone. Scripts balance accessibility with depth: engaging enough to stop the scroll, spiritually resonant enough to convert curiosity into trust. Each script is structured for on-camera delivery and optimised for Reels format.</p>
+          </div>
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">05 &mdash; Design</span>
+            <h4>Designing Creatives &amp; Graphics</h4>
+            <p>Full creative production &mdash; social media graphics, quote cards, story templates, product showcase visuals, and branded educational posts. Every design reflects the DivineHeals aesthetic: soft, considered, and spiritually intentional. Visual consistency across all touchpoints is non-negotiable.</p>
+          </div>
+          <div class="dh-resp-card">
+            <span class="dh-resp-num">06 &mdash; Publishing</span>
+            <h4>Managing &amp; Publishing Posts</h4>
+            <p>Day-to-day management of the Instagram account &mdash; scheduling, publishing, caption writing, hashtag strategy, community engagement, and story management. Ensuring the account remains active, consistent, and responsive &mdash; building the reliable presence that retains followers and converts them into clients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 4: Content Lifecycle ── -->
+    <section class="cs-section" id="lifecycle">
+      <div class="container">
+        <h2 class="reveal">Integrated Content Lifecycle</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>Most brands split their content function across multiple vendors. For DivineHeals, that fragmented approach would be fatal to brand coherence. When one person owns strategy, shoots, scripts, design, and publishing simultaneously, <span class="cs-highlight">everything connects</span>. The script I write informs the shot I direct. The shoot gives me the raw material for the graphic I design. The caption is built on the same tonal foundation as the script.</p>
+        </div>
+
+        <div class="dh-lifecycle reveal reveal-delay-2">
+          <div class="dh-lifecycle-step">
+            <div class="step-index">01</div>
+            <h4>Strategy</h4>
+            <p>Monthly content calendar, content bucket planning, campaign mapping to brand offerings and seasonal intent.</p>
+          </div>
+          <div class="dh-lifecycle-step">
+            <div class="step-index">02</div>
+            <h4>Pre-Production</h4>
+            <p>Shot lists, mood boards, prop and location briefs, script first drafts &mdash; everything needed before the camera is on.</p>
+          </div>
+          <div class="dh-lifecycle-step">
+            <div class="step-index">03</div>
+            <h4>Scripting</h4>
+            <p>Full Reels scripts with hook, body, and CTA. Written to the brand voice and formatted for on-camera delivery.</p>
+          </div>
+          <div class="dh-lifecycle-step">
+            <div class="step-index">04</div>
+            <h4>Production</h4>
+            <p>On-set shoot direction and execution. Talent direction, environment management, and footage quality control.</p>
+          </div>
+          <div class="dh-lifecycle-step">
+            <div class="step-index">05</div>
+            <h4>Design</h4>
+            <p>Graphics, quote cards, product visuals, story templates &mdash; built in the DivineHeals visual system.</p>
+          </div>
+          <div class="dh-lifecycle-step">
+            <div class="step-index">06</div>
+            <h4>Publishing</h4>
+            <p>Scheduling, captions, hashtags, community management, stories. The account stays active, consistent, and engaged.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 5: Content Philosophy ── -->
+    <section class="cs-section" id="philosophy">
+      <div class="container">
+        <h2 class="reveal">Content Philosophy & Brand Authority</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>Spiritual wellness content sits in a delicate space. Push too hard on product and it feels transactional. Stay too abstract and it fails to convert. The content strategy for DivineHeals is built on three clear principles.</p>
+        </div>
+
+        <div class="dh-principles reveal reveal-delay-2">
+          <div class="dh-principle">
+            <div class="dh-principle-num">01</div>
+            <div class="dh-principle-body">
+              <h4>Trust Before Transaction</h4>
+              <p>Every piece of educational content &mdash; about crystals, healing, energy, or spiritual tools &mdash; is designed to give value first. The audience should feel educated, understood, and respected before they ever see a product link. Trust is the only currency that converts in this space.</p>
+            </div>
+          </div>
+          <div class="dh-principle">
+            <div class="dh-principle-num">02</div>
+            <div class="dh-principle-body">
+              <h4>Visual Language as Brand Identity</h4>
+              <p>In a market crowded with spiritual content, visual differentiation is critical. The DivineHeals aesthetic is deliberately crafted &mdash; consistent colour palettes, intentional typography, imagery that feels grounded and premium rather than generic. Every visual is a brand statement.</p>
+            </div>
+          </div>
+          <div class="dh-principle">
+            <div class="dh-principle-num">03</div>
+            <div class="dh-principle-body">
+              <h4>Storytelling Over Selling</h4>
+              <p>Scripts are written to tell stories &mdash; of transformation, of personal discovery, of the experiences clients have had with DivineHeals. Stories sell without selling. They build the emotional connection that is the foundation of every purchase decision in the wellness category.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 6: Platform ── -->
+    <section class="cs-section" id="platform">
+      <div class="container">
+        <h2 class="reveal">Platform Focus — Instagram Ecosystem</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>The entire mandate is focused on <span class="cs-highlight">Instagram</span> &mdash; the primary platform where DivineHeals builds community, showcases its offerings, educates its audience, and converts followers into clients. The strategy covers all Instagram touchpoints: feed posts (static and carousel), Reels, Stories, and Highlights. Each format serves a different audience intent and a different stage of the brand relationship.</p>
+        </div>
+        <div class="cs-link-list reveal reveal-delay-2">
+          <a href="https://www.instagram.com/divineheals_official/" target="_blank" rel="noopener" class="cs-external-link">
+            <svg class="icon" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round">
+              <rect x="4.5" y="4.5" width="15" height="15" rx="4.5" ry="4.5"/>
+              <circle cx="12" cy="12" r="3.6"/>
+              <circle cx="16.8" cy="7.2" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            @divineheals_official on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 7: Why This Matters ── -->
+    <section class="cs-section" id="significance">
+      <div class="container">
+        <h2 class="reveal">The Significance of Integrated Management</h2>
+        <div class="cs-narrative reveal reveal-delay-1">
+          <p>Managing content for a spiritual brand is fundamentally different from managing content for a conventional product or service business. The audience is not shopping &mdash; they are searching. They are looking for something that resonates, something that feels authentic, and something that feels <span class="cs-highlight">safe to trust</span>.</p>
+          <p>That means every post is a brand promise. A poorly-produced Reel, a caption that feels generic, or a visual that looks like every other wellness account on the platform is not just a missed opportunity &mdash; it is a credibility erosion. In this category, inconsistency does not just cause unfollows. It causes distrust.</p>
+          <p>By owning the entire pipeline &mdash; from strategy to shoot to script to design to publish &mdash; I ensure that DivineHeals speaks with one coherent voice. The audience does not see the seams between different contributors. They see a brand that <span class="cs-highlight">knows exactly who it is</span>, speaks consistently, and earns their trust through every touchpoint. That is the standard I hold this mandate to.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" style="border-top: 1px solid var(--border); padding-top: 80px;">
+      <div class="container" style="text-align: center;">
+        <p class="eyebrow">Next Case Study</p>
+        <h2 style="margin: 20px 0 40px;">Vedam School of Technology — Social Build</h2>
+        <a href="case-study-vedam.html" class="btn btn-primary">Read Vedam Case Study</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Shweta Ranjan. Portfolio.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
