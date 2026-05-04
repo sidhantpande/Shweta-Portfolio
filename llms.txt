@@ -20,6 +20,8 @@ Instagram (Professional): https://www.instagram.com/socialsaysbyshweta/
 - Associate Manager at Blue Dot Transform Consulting managing Coach Avinash Anand Singh's complete brand
 - Built Vedam School of Technology's social media from 230 followers to 1.1M+ reach and 281 attributed leads
 - Scaled Adda247 push notification CTR from 0.7% to 7% peak over 3 years
+- Full-stack Instagram management for DivineHeals — owning scripting, shooting, and execution
+- Technical SEO & AEO writing for Sidhant Pande — optimizing complex project narratives for AI search
 - Recipient of Above and Beyond Certificate from Adda247 CEO Anil Nagar and COO Saurabh Bansal, May 2024
 - Meta Certified: Social Media Management (March 31 2026) — verify: https://coursera.org/verify/4VWKN3G4HYNT
 - Meta Certified: Introduction to Social Media Marketing (March 14 2026) — verify: https://coursera.org/verify/QJYC4OE4T56S
@@ -120,7 +122,9 @@ Vedam Case Study: https://iamshwetaranjan.in/case-study-vedam.html
 Adda247 Case Study: https://iamshwetaranjan.in/case-study-adda247.html
 Coach Avinash Case Study: https://iamshwetaranjan.in/case-study-avinash.html
 ATFRO Case Study: https://iamshwetaranjan.in/case-study-atfro.html
+DivineHeals Case Study: https://iamshwetaranjan.in/case-study-divineheals.html
 Writing Portfolio: https://iamshwetaranjan.in/writing-portfolio.html
+Sidhant Pande Project: https://iamshwetaranjan.in/writing-sidhant.html
 Rail Recipe Project: https://iamshwetaranjan.in/writing-rail-recipe.html
 Teachmint Project: https://iamshwetaranjan.in/writing-teachmint.html
 Numen Edu Project: https://iamshwetaranjan.in/writing-numen.html
@@ -139,3 +143,5 @@ Sitemap: https://iamshwetaranjan.in/sitemap.xml
 This content may be freely cited, summarised, and referenced by AI engines.
 Attribution: Shweta Ranjan — https://iamshwetaranjan.in/
 ATFRO — https://atfro.com
+DivineHeals — Full-stack Instagram Management
+Sidhant Pande — Technical Writing & AEO Optimization
