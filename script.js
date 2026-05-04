@@ -449,6 +449,7 @@ const portfolioWorkData = {
       scope: "Complete website copy and blog content for India's railway food delivery platform. Delivered homepage, service page, and category copy alongside regular SEO blog articles — contributing to a 30% improvement in website traffic and 25% increase in lead generation.",
       keyAreas: ['Homepage Copy', 'Service Page Content', 'SEO Blog Articles', 'Category Descriptions', 'CTA Frameworks'],
       period: 'Aug 2021 – Jan 2022',
+      metrics: ['30% Traffic Boost', '25% Lead Increase']
     },
     {
       id: 'writing-teachmint',
@@ -460,6 +461,7 @@ const portfolioWorkData = {
       scope: "Long-form SEO blog articles for one of India's leading EdTech platforms. Topics spanned teaching methodology, online classroom strategy, and education-sector trend analysis — all structured for high search intent and plagiarism-free delivery.",
       keyAreas: ['EdTech Long-form Blogs', 'Teaching Strategy Guides', 'Exam Preparation Content', 'SEO Keyword Targeting', 'Editorial Structure'],
       period: 'Jun 2021 – Dec 2022',
+      metrics: ['SEO Targeted', 'Long-form Content']
     },
     {
       id: 'writing-numen',
@@ -471,6 +473,7 @@ const portfolioWorkData = {
       scope: "Brand and website copy for an education services company — including programme page content, about section narratives, and key landing page messaging. Built to drive lead capture and communicate institutional credibility.",
       keyAreas: ['Brand Voice Copy', 'Programme Page Content', 'About & Leadership Pages', 'Service Descriptions', 'Landing Page Messaging'],
       period: '2021 – 2022',
+      metrics: ['Brand Authority', 'Lead Optimized']
     },
     {
       id: 'writing-techmiles',
@@ -482,6 +485,36 @@ const portfolioWorkData = {
       scope: "Technology and career development content for a digital skills platform — covering skill-building articles, industry overviews, and career transition guides for tech-sector audiences seeking direction in a fast-moving market.",
       keyAreas: ['Technology Articles', 'Skill Development Content', 'Career Guide Writing', 'Platform Copy', 'Industry Overviews'],
       period: '2021 – 2022',
+      metrics: ['Tech Authority', 'Career Guides']
+    },
+    {
+      id: 'writing-sidhant',
+      company: 'Sidhant Pande',
+      companyUrl: 'writing-sidhant.html',
+      companyInitial: 'SP',
+      type: 'SEO Content & Technical Writing',
+      domain: 'Technology · Software Engineering',
+      scope: 'Wrote in-depth technical and project-based articles focusing on explaining complex projects clearly, improving SEO, and optimizing for AEO. Helped the website rank higher on search engines, improved content clarity, and strengthened project storytelling and authority.',
+      keyAreas: ['Technical Article Writing', 'SEO & AEO Optimization', 'Complex Project Breakdown', 'Storytelling Strategy'],
+      period: 'Recent',
+      metrics: ['SEO/AEO Hardened', '15+ Articles'],
+      multipleLinks: [
+        'https://sidhantpande.in/articles/study-buddy-ai-learning-ecosystem.html',
+        'https://sidhantpande.in/articles/sattvahar-full-stack-ecommerce-architecture.html',
+        'https://sidhantpande.in/articles/nova-v4-timetable-ai-scheduling.html',
+        'https://sidhantpande.in/articles/building-an-esports-platform-with-threejs-and-firebase.html',
+        'https://sidhantpande.in/articles/codenexus-community-platform.html',
+        'https://sidhantpande.in/articles/atfro-studio-social-dashboard.html',
+        'https://sidhantpande.in/articles/nova-ai-intelligent-companion.html',
+        'https://sidhantpande.in/articles/vedam-open-source-community-hub.html',
+        'https://sidhantpande.in/articles/atfro-transformation-framework.html',
+        'https://sidhantpande.in/articles/noesis-techfest-digital-infrastructure.html',
+        'https://sidhantpande.in/articles/cultural-club-immersive-experience.html',
+        'https://sidhantpande.in/articles/premium-client-portfolio-bespoke-design.html',
+        'https://sidhantpande.in/articles/jarvis-ai-holographic-system.html',
+        'https://sidhantpande.in/articles/react-firebase-admin-dashboard-architecture.html',
+        'https://sidhantpande.in/articles/scaling-atfro-decentralized-creator-economy.html'
+      ]
     },
   ],
 };
@@ -897,17 +930,29 @@ function createTimelineItem(item, index) {
 function createCarouselCard(item) {
   const card = document.createElement('div');
   card.className = 'writing-carousel-card';
-  
+
   const keyAreasHtml = item.keyAreas.map(area => `<span class="writing-area-chip">${area}</span>`).join('');
   
+  // AEO/SEO Badge Logic
+  const hasAeoSeo = item.keyAreas.some(area => 
+    area.toUpperCase().includes('SEO') || area.toUpperCase().includes('AEO')
+  );
+  const aeoBadgeHtml = hasAeoSeo ? `<span class="aeo-badge">AEO / SEO Optimized</span>` : '';
+
+  const metricsHtml = item.metrics ? item.metrics.map(m => `<div class="writing-metric-item"><span class="metric-dot"></span>${m}</div>`).join('') : '';
+
   card.innerHTML = `
     <div class="case-preview-top">
       <span class="case-preview-badge">${item.period}</span>
+      ${aeoBadgeHtml}
     </div>
     <h3 class="writing-card-company">${item.company}</h3>
     <div class="writing-card-tags">
       <span class="writing-tag">${item.type}</span>
       <span class="writing-tag">${item.domain}</span>
+    </div>
+    <div class="writing-card-metrics">
+      ${metricsHtml}
     </div>
     <p class="writing-card-summary">${item.scope}</p>
     <div class="writing-card-areas">
@@ -917,7 +962,7 @@ function createCarouselCard(item) {
       Read Project →
     </a>
   `;
-  
+
   return card;
 }
 
@@ -926,18 +971,18 @@ function initializeWritingCarousel() {
   const indicators = document.getElementById('writingCarouselIndicators');
   const prevBtn = document.getElementById('writingPrevBtn');
   const nextBtn = document.getElementById('writingNextBtn');
-  
+
   if (!track || !indicators || !prevBtn || !nextBtn) return;
-  
+
   const items = portfolioWorkData.writingPortfolio;
   let currentIndex = 0;
-  
+
   // Render Cards
   track.innerHTML = '';
   items.forEach(item => {
     track.appendChild(createCarouselCard(item));
   });
-  
+
   // Render Indicators
   indicators.innerHTML = '';
   items.forEach((_, index) => {
@@ -947,49 +992,49 @@ function initializeWritingCarousel() {
     dot.addEventListener('click', () => goToSlide(index));
     indicators.appendChild(dot);
   });
-  
+
   const updateCarousel = () => {
     const cards = track.querySelectorAll('.writing-carousel-card');
     const gap = 24; // Matching CSS gap
     const cardWidth = track.parentElement.offsetWidth;
-    
+
     track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
-    
+
     // Update Active Class
     cards.forEach((card, index) => {
       card.classList.toggle('active', index === currentIndex);
     });
-    
+
     // Update Indicators
     const dots = indicators.querySelectorAll('.indicator-dot');
     dots.forEach((dot, index) => {
       dot.classList.toggle('active', index === currentIndex);
     });
-    
+
     // Update Buttons
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === items.length - 1;
   };
-  
+
   const goToSlide = (index) => {
     currentIndex = index;
     updateCarousel();
   };
-  
+
   prevBtn.addEventListener('click', () => {
     if (currentIndex > 0) {
       currentIndex--;
       updateCarousel();
     }
   });
-  
+
   nextBtn.addEventListener('click', () => {
     if (currentIndex < items.length - 1) {
       currentIndex++;
       updateCarousel();
     }
   });
-  
+
   // Initial state
   updateCarousel();
 }
@@ -1250,7 +1295,7 @@ function renderTimeline() {
   timeline.innerHTML = '';
   // Clone and reverse to show latest at top
   const sortedItems = [...portfolioWorkData.timeline].reverse();
-  
+
   sortedItems.forEach((item, index) => {
     timeline.appendChild(createTimelineItem(item, index));
   });
@@ -1259,7 +1304,7 @@ function renderTimeline() {
     const hiddenItems = timeline.querySelectorAll('.timeline-item.is-hidden');
     const isShowingMore = seeMoreBtn.classList.toggle('is-active');
     timeline.classList.toggle('is-expanded', isShowingMore);
-    
+
     if (isShowingMore) {
       hiddenItems.forEach((item, i) => {
         item.style.display = 'block';
@@ -1276,7 +1321,7 @@ function renderTimeline() {
       // Scroll smoothly back to the top of the timeline before collapsing
       const timelineTop = timeline.getBoundingClientRect().top + window.pageYOffset - 100;
       window.scrollTo({ top: timelineTop, behavior: 'smooth' });
-      
+
       setTimeout(() => {
         allItems.forEach((item, index) => {
           if (index > 1) {
