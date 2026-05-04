@@ -254,85 +254,91 @@ h4 {
 
 .nav {
   position: fixed;
-  inset: 24px 0 auto 0;
-  z-index: 100;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  inset: 32px 0 auto 0;
+  z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
 }
 
 .nav.scrolled {
-  inset: 12px 0 auto 0;
+  inset: 16px 0 auto 0;
 }
 
 .nav-inner {
-  width: min(700px, 94%);
+  width: min(850px, 94%);
   margin: 0 auto;
-  min-height: 52px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  min-height: 64px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 32px;
   pointer-events: auto;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.03),
-    0 0 0 1px rgba(0, 0, 0, 0.01);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
 .nav.scrolled .nav-inner {
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(var(--accent-rgb), 0.1);
 }
 
 .brand {
   display: flex !important;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   color: var(--accent-strong);
   text-decoration: none;
+  letter-spacing: -0.01em;
 }
 
 .nav-logo {
-  height: 24px;
-  width: 24px;
-  border-radius: 6px;
+  height: 28px;
+  width: 28px;
+  border-radius: 8px;
   object-fit: contain;
-  background: white;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .nav-links a {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--text-secondary);
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: 999px;
-  transition: all 0.3s ease;
-  position: relative;
+  transition: all 0.4s ease;
 }
 
 .nav-links a:hover {
   color: var(--accent-strong);
-  background: rgba(10, 94, 82, 0.08);
-  /* More subtle, less green */
+  background: rgba(var(--accent-rgb), 0.06);
 }
 
-.nav-links a.active {
-  color: #fff;
+.nav-links a.nav-cta {
   background: var(--accent-strong);
+  color: #fff;
+  padding: 10px 24px;
+  margin-left: 8px;
+  box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.2);
+}
+
+.nav-links a.nav-cta:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(var(--accent-rgb), 0.3);
 }
 
 .nav-toggle {
@@ -394,83 +400,140 @@ h4 {
 }
 
 .hero {
-  padding-top: 180px;
-  padding-bottom: 120px;
+  padding-top: clamp(120px, 13vh, 180px);
+  padding-bottom: 90px;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(var(--accent-rgb), 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(var(--accent-rgb), 0.05) 0%, transparent 40%),
+    var(--background);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.02) 0%, transparent 70%);
+  animation: hero-bg-rotate 30s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes hero-bg-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .hero-layout {
-  max-width: 900px;
+  max-width: 1200px;
   position: relative;
   z-index: 1;
 }
 
 .hero-layout h1 {
-  font-size: clamp(3.5rem, 8vw, 5.5rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  letter-spacing: -0.05em;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-strong) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1;
+  line-height: 0.95;
+  margin-bottom: 24px;
 }
 
 .hero-role {
-  margin-top: 24px;
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
-  font-weight: 500;
-  color: var(--text-secondary);
-  letter-spacing: 0.02em;
+  margin-top: 28px;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  color: var(--accent-strong);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .hero-role::before {
   content: '';
-  width: 40px;
-  height: 1px;
-  background: var(--accent-soft);
+  width: 50px;
+  height: 2px;
+  background: var(--accent-strong);
 }
 
 .hero-summary {
-  margin-top: 24px;
-  max-width: 720px;
+  margin-top: 28px;
+  max-width: 800px;
   color: var(--text-secondary);
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  font-weight: 400;
 }
 
-
-
 .hero-actions {
-  margin-top: 30px;
+  margin-top: 42px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
+}
+
+.hero-actions .btn-primary {
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  border: none;
+  box-shadow: 0 20px 40px rgba(var(--accent-rgb), 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-actions .btn-primary:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(var(--accent-rgb), 0.3);
+}
+
+.hero-actions .btn-secondary {
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
 }
 
 .hero-metrics {
-  margin-top: 60px;
+  margin-top: 72px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 
 .hero-metric {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-premium);
-  transition: all var(--transition);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--accent-rgb), 0.1);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
+}
+
+.hero-metric:hover {
+  transform: translateY(-12px) scale(1.02);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: var(--accent-soft);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+}
+
+.hero-metric .metric-value {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-metric::after {
@@ -3431,6 +3494,47 @@ h4 {
   border-color: var(--accent-soft);
 }
 
+.aeo-badge {
+  background: var(--accent-subtle);
+  color: var(--accent-strong);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--accent-soft);
+  display: inline-flex;
+  align-items: center;
+}
+
+.writing-card-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.writing-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-subtle);
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-soft);
+}
+
+.metric-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
 /* Floating Navigation Buttons */
 .carousel-btn {
   position: absolute;
@@ -3907,4 +4011,286 @@ h4 {
 .copyright {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CASE STUDY BENTO GRID — Asymmetric 5-Card Layout
+   Uses existing design system (green palette, no new colors)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Grid: 2-column base, ATFRO spans both ── */
+.cs-bento-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Full width — Row 1 (ATFRO) */
+.cs-bento-full {
+  grid-column: 1 / -1;
+}
+
+/* Half width — Rows 2 & 3 (pairs) */
+.cs-bento-half {
+  grid-column: span 1;
+}
+
+/* ── Base card shell ── */
+.cs-bento-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+  box-shadow: 0 4px 20px -6px rgba(15, 23, 42, 0.06);
+}
+
+.cs-bento-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.04), transparent 65%);
+  pointer-events: none;
+}
+
+.cs-bento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 56px -12px rgba(15, 23, 42, 0.13);
+  border-color: var(--accent-soft);
+}
+
+/* Full-width card gets a subtle accent left border strip */
+.cs-bento-full {
+  border-left: 3px solid var(--accent);
+}
+
+/* DivineHeals card — soft spiritual tint, still green palette */
+/* DivineHeals card — uses same standard cs-bento-card green style */
+
+/* ── Inner padding ── */
+.cs-bento-inner {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Full-width card: horizontal metrics layout on large screens */
+@media (min-width: 900px) {
+  .cs-bento-full .cs-bento-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 48px;
+  }
+
+  .cs-bento-full .cs-bento-top    { grid-column: 1; }
+  .cs-bento-full .cs-bento-title  { grid-column: 1; }
+  .cs-bento-full .cs-bento-role   { grid-column: 1; }
+  .cs-bento-full .cs-bento-summary { grid-column: 1; }
+
+  .cs-bento-full .cs-bento-metrics {
+    grid-column: 2;
+    grid-row: 1 / 5;
+    align-self: center;
+    flex-direction: column;
+    border-top: none;
+    border-left: 1px solid var(--border);
+    padding: 0 0 0 40px;
+    margin: 0;
+    min-width: 140px;
+    gap: 20px;
+  }
+
+  .cs-bento-full .cs-card-link {
+    grid-column: 1;
+    align-self: end;
+  }
+}
+
+/* ── Top row (badge + tag) ── */
+.cs-bento-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ── Badge ── */
+.cs-bento-badge {
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.cs-badge-active {
+  background: var(--accent-faded);
+  color: var(--accent-strong);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* ── Tag pill ── */
+.cs-bento-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.cs-tag-featured {
+  background: var(--accent-faded);
+  color: var(--accent-strong);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* ── Typography ── */
+.cs-bento-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 700;
+  color: var(--accent-strong);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.cs-bento-role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: -4px;
+}
+
+.cs-bento-summary {
+  font-size: 0.93rem;
+  line-height: 1.68;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+/* ── Role Pills (DivineHeals) ── */
+.cs-role-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cs-role-pill {
+  font-size: 0.71rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 99px;
+  background: var(--accent-faded);
+  color: var(--accent-strong);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  letter-spacing: 0.02em;
+}
+
+/* ── Metrics row ── */
+.cs-bento-metrics {
+  display: flex;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.cs-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cs-metric-val {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent-strong);
+  line-height: 1;
+}
+
+.cs-metric-lbl {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+/* ── CTA link ── */
+.cs-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  color: var(--accent-strong);
+  background: var(--surface);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.cs-card-link:hover {
+  background: var(--accent-strong);
+  color: #fff;
+  border-color: var(--accent-strong);
+  box-shadow: 0 8px 20px -4px rgba(4, 120, 87, 0.25);
+}
+
+.cs-card-link .icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cs-card-link:hover .icon {
+  transform: translateX(3px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .cs-bento-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cs-bento-full,
+  .cs-bento-half {
+    grid-column: 1 / -1;
+  }
+
+  .cs-bento-inner {
+    padding: 24px;
+  }
+
+  .cs-bento-metrics {
+    gap: 16px;
+  }
 }
