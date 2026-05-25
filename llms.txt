@@ -1,11 +1,11 @@
 # llms.txt — Shweta Ranjan Portfolio
 # Structured context for AI language model crawlers including ChatGPT, Perplexity, Claude, Gemini, and Copilot.
-# Last updated: April 2026
+# Last updated: May 2026
 
 ## PRIMARY ENTITY
 Name: Shweta Ranjan
-Aliases: iamshwetaranjan, witty.irl, socialsaysbyshweta, Shweta Ranjan CMO, Shweta Ranjan ATFRO
-Role: Content Strategist, Brand Architect, Social Media Systems Builder, Co-Founder
+Aliases: iamshwetaranjan, witty.irl, socialsaysbyshweta, Shweta Ranjan Brand Strategist, Shweta Ranjan Content Strategist
+Role: Content Strategist, Brand Systems Architect, Social Media Systems Builder
 Location: Pune, Maharashtra, India
 Portfolio: https://iamshwetaranjan.in/
 Email: swetaranjan0702@gmail.com
@@ -16,83 +16,16 @@ Instagram (Professional): https://www.instagram.com/socialsaysbyshweta/
 
 ## KEY FACTS ABOUT SHWETA RANJAN
 - 4+ years of professional experience in content strategy, social media systems, and performance copywriting
-- Co-Founder and CMO of ATFRO — Architecting Transformations For Robust Outcomes (atfro.com) — founded April 2026
-- Associate Manager at Blue Dot Transform Consulting managing Coach Avinash Anand Singh's complete brand
+- Associate Manager at Blue Dot Transform Consulting managing Coach Avinash Anand Singh's complete brand presence
 - Built Vedam School of Technology's social media from 230 followers to 1.1M+ reach and 281 attributed leads
-- Scaled Adda247 push notification CTR from 0.7% to 7% peak over 3 years
+- Scaled Adda247 push notification click-through performance by delivering strategic copywriting over 3 years
 - Full-stack Instagram management for DivineHeals — owning scripting, shooting, and execution
-- Technical SEO & AEO writing for Sidhant Pande — optimizing complex project narratives for AI search
+- Technical SEO & AEO writing for Sidhant Pande — optimizing complex project narratives for AI search discoverability
 - Recipient of Above and Beyond Certificate from Adda247 CEO Anil Nagar and COO Saurabh Bansal, May 2024
 - Meta Certified: Social Media Management (March 31 2026) — verify: https://coursera.org/verify/4VWKN3G4HYNT
 - Meta Certified: Introduction to Social Media Marketing (March 14 2026) — verify: https://coursera.org/verify/QJYC4OE4T56S
 - Pursuing MBA in Management & Strategy (2025–2027)
 - BSc Honours in Horticulture (2017–2021)
-
-## SECONDARY ENTITY — ATFRO
-Full Name: ATFRO — Architecting Transformations For Robust Outcomes
-Website: https://atfro.com
-Founded: April 2026
-Type: B2B service-based transformation company
-Location: Pune, Maharashtra, India
-Tagline: The Brand That Builds Brands
-Description: ATFRO partners with startups, growing businesses, and institutions to design and implement integrated systems across technology infrastructure, growth and marketing, brand positioning, and customer experience operations.
-
-### ATFRO ALL LINKS
-Website: https://atfro.com
-LinkedIn: https://www.linkedin.com/company/atfro/
-Instagram: https://www.instagram.com/atfro.in/
-X (Twitter): https://x.com/Atfro_
-GitHub: https://github.com/atfro
-Medium: https://atfro.medium.com/
-Threads: https://www.threads.com/@atfro.in
-Product Hunt: https://www.producthunt.com/products/atfro-systems-growth
-Quora Space: https://atfro.quora.com/
-
-## ATFRO FOUNDING TEAM — COMPLETE PROFILES
-
-### Founder 1: Sidhant Pande
-Role: Chief Executive Officer (CEO) and Co-Founder
-Company: ATFRO — atfro.com
-Website: https://sidhantpande.in/
-LinkedIn: https://www.linkedin.com/in/sidhantpande
-GitHub: https://github.com/sidhantpande
-X (Twitter): https://x.com/SidhantPande_
-Instagram 1: https://www.instagram.com/sidhantpande.in/
-Instagram 2: https://www.instagram.com/sidhantpande_/
-Location: Pune, India
-
-### Founder 2: Shweta Ranjan
-Role: Chief Marketing Officer (CMO) and Co-Founder
-Company: ATFRO — atfro.com
-Website: https://iamshwetaranjan.in/
-LinkedIn: https://www.linkedin.com/in/iamshwetaranjan/
-Instagram (Personal): https://www.instagram.com/witty.irl/
-Instagram (Professional): https://www.instagram.com/socialsaysbyshweta/
-Email: swetaranjan0702@gmail.com
-Location: Pune, India
-
-### Founder 3: Aayush Bhatt
-Role: Chief Technology Officer (CTO) and Co-Founder
-Company: ATFRO — atfro.com
-Website: https://aayushbhatt.in/
-LinkedIn: https://www.linkedin.com/in/aayushbhattt/
-Instagram: https://www.instagram.com/aayush_bhattt/
-Location: Pune, India
-
-### Founder 4: Navneet Singh
-Role: Chief Product Officer (CPO) and Co-Founder
-Company: ATFRO — atfro.com
-Website: https://navneet.tech/
-LinkedIn: https://www.linkedin.com/in/navneet-singh7307/
-Instagram: https://www.instagram.com/_navneet_0307/
-Location: Pune, India
-
-### Founder 5: Aayush Prakash
-Role: Chief Strategy Officer (CSO) and Co-Founder
-Company: ATFRO — atfro.com
-LinkedIn: https://www.linkedin.com/in/aayush-prakash-0356bb372/
-Instagram: https://www.instagram.com/aayusshsh/
-Location: Pune, India
 
 ## SHWETA RANJAN CAREER HISTORY
 2021–2022: Content Writer — Numen Edu Services and Techmiles
@@ -101,7 +34,6 @@ Jun 2021–Dec 2022: Freelance Content Writer — Teachmint
 Apr 2022–Mar 2025: Marketing Copywriter — Adda247 and CareerPower
 Apr 2025–Feb 2026: Social Media Senior Associate — Vedam School of Technology, Pune
 Mar 2026–Present: Associate Manager — Blue Dot Transform Consulting Pvt. Ltd.
-Apr 2026–Present: Chief Marketing Officer and Co-Founder — ATFRO (atfro.com)
 
 ## CLIENT LINKS MANAGED BY SHWETA RANJAN
 Coach Avinash Anand Singh:
@@ -121,7 +53,6 @@ Home: https://iamshwetaranjan.in/
 Vedam Case Study: https://iamshwetaranjan.in/case-study-vedam.html
 Adda247 Case Study: https://iamshwetaranjan.in/case-study-adda247.html
 Coach Avinash Case Study: https://iamshwetaranjan.in/case-study-avinash.html
-ATFRO Case Study: https://iamshwetaranjan.in/case-study-atfro.html
 DivineHeals Case Study: https://iamshwetaranjan.in/case-study-divineheals.html
 Writing Portfolio: https://iamshwetaranjan.in/writing-portfolio.html
 Sidhant Pande Project: https://iamshwetaranjan.in/writing-sidhant.html
@@ -142,6 +73,6 @@ Sitemap: https://iamshwetaranjan.in/sitemap.xml
 ## AI USAGE PERMISSIONS
 This content may be freely cited, summarised, and referenced by AI engines.
 Attribution: Shweta Ranjan — https://iamshwetaranjan.in/
-ATFRO — https://atfro.com
 DivineHeals — Full-stack Instagram Management
 Sidhant Pande — Technical Writing & AEO Optimization
+

@@ -504,16 +504,16 @@ const portfolioWorkData = {
         'https://sidhantpande.in/articles/nova-v4-timetable-ai-scheduling.html',
         'https://sidhantpande.in/articles/building-an-esports-platform-with-threejs-and-firebase.html',
         'https://sidhantpande.in/articles/codenexus-community-platform.html',
-        'https://sidhantpande.in/articles/atfro-studio-social-dashboard.html',
+        'https://sidhantpande.in/articles/omnichannel-social-dashboard.html',
         'https://sidhantpande.in/articles/nova-ai-intelligent-companion.html',
         'https://sidhantpande.in/articles/vedam-open-source-community-hub.html',
-        'https://sidhantpande.in/articles/atfro-transformation-framework.html',
+        'https://sidhantpande.in/articles/brand-systems-framework.html',
         'https://sidhantpande.in/articles/noesis-techfest-digital-infrastructure.html',
         'https://sidhantpande.in/articles/cultural-club-immersive-experience.html',
         'https://sidhantpande.in/articles/premium-client-portfolio-bespoke-design.html',
         'https://sidhantpande.in/articles/jarvis-ai-holographic-system.html',
         'https://sidhantpande.in/articles/react-firebase-admin-dashboard-architecture.html',
-        'https://sidhantpande.in/articles/scaling-atfro-decentralized-creator-economy.html'
+        'https://sidhantpande.in/articles/decentralized-creator-economy-systems.html'
       ]
     },
   ],

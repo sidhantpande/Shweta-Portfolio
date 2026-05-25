@@ -589,6 +589,12 @@ h4 {
   padding: 12px;
   background: white;
   box-shadow: var(--shadow-premium);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.profile-image-wrap:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
 .profile-image-wrap::before {
@@ -611,6 +617,11 @@ h4 {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   filter: contrast(1.02);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-image-wrap:hover .profile-image {
+  transform: scale(1.02);
 }
 
 .kpi-strip {
@@ -4018,7 +4029,7 @@ h4 {
    Uses existing design system (green palette, no new colors)
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── Grid: 2-column base, ATFRO spans both ── */
+/* ── Grid: 2-column base layout ── */
 .cs-bento-grid {
   margin-top: 48px;
   display: grid;
@@ -4026,7 +4037,7 @@ h4 {
   gap: 24px;
 }
 
-/* Full width — Row 1 (ATFRO) */
+/* Full width card support if needed */
 .cs-bento-full {
   grid-column: 1 / -1;
 }
